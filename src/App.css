@@ -1,0 +1,138 @@
+#root {
+  min-height: inherit;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.youtube-center{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.header-container{
+  height: 8vh;
+}
+
+.body-container{
+  height: 92vh;
+}
+
+.side-menu-list:hover{
+  background-color: #e8e8e8;
+}
+
+.truncateText{
+  text-overflow: ellipsis;
+  max-width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+a{
+  color:black;
+  text-decoration: none;
+}
+
+.listing{
+  background: #fff;
+  border: 1px solid #ccc;
+  border-top-color: #d9d9d9;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+  cursor: default;
+  position: absolute;
+  top: 8%;
+  width: 37%;
+  max-height: 45%;
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+.parent-filter-buttons:hover> span{
+  color:white !important;
+  background-color: black !important;
+}
+
+.filter-buttons{
+  background-color: #0000000d;
+  font-weight: 500;
+}
+.custom-bg-color-light{
+  background-color: #0000001c;
+}
+
+.custom-bg-color-dark{
+  background-color: #00000032
+}
+
+.suggetion-list:hover{
+  background: #d9d9d9;;
+}
+
+ul{
+  list-style: none;
+}
+
+.vw-6{
+  width: 6vw;
+}
+.vw-11{
+  width: 11vw;
+}
+.vw-94{
+  width: 94vw;
+}
+.vw-89{
+  width: 89vw;
+}
+/* .card {
+  position: relative;
+  -webkit-box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.1);
+  background-color: #FFF;
+  border-radius: 6px;
+  height: 500px;
+  overflow: hidden;
+  width: 350px;
+  margin: 40px auto;
+} */
+
+.shimmerBG {
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+  animation-name: shimmer;
+  animation-timing-function: linear;
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff 8%, #e9e9e9 18%, #cfcaca21 33%);
+  background-size: 1200px 100%;
+}
+
+
+@-webkit-keyframes shimmer {
+  0% {
+      background-position: -100% 0;
+  }
+  100% {
+      background-position: 100% 0;
+  }
+}
+
+@keyframes shimmer {
+  0% {
+      background-position: -1200px 0;
+  }
+  100% {
+      background-position: 1200px 0;
+  }
+}
